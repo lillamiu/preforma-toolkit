@@ -1,0 +1,98 @@
+
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  color: $color--purple;
+}
+
+/*--------HEADINGS--------*/
+h1 { /*Welcome header*/
+  font-family: 'League Spartan', sans-serif;
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  color: $color--teal;
+}
+
+h2 { /*section header*/
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.8rem:
+  line-height: 1.8rem;
+  color: $color--teal;
+  text-transform: uppercase;
+}
+
+h3 { /*section sub-header*/
+  font-family: 'Laila', serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  color: $color--purple;
+}
+
+/*--------EMPHASIS--------*/
+strong {
+  font-family: 'Laila', serif;
+  font-weight: 500;
+  color: inherit;
+}
+
+/*--------BODY--------*/
+p, input {
+  font-family: 'Laila', serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+a {
+  font-weight: 500;
+  color: $color--purple;
+  font-size: inherit;
+
+  &:visited {
+    //change color?
+  }
+}
+
+/*--------FOOTER--------*/
+footer {
+  font-family: 'Laila', serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+/*---------CONTACT FORM----------*/
+label {
+  font-family: 'Laila', serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+input::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+/*--------NAVIGATION--------*/
+.menu-item {
+  font-family: 'League Spartan', serif;
+  font-size: 1.8rem;
+  color: $color--purple;
+  text-transform: uppercase;
+
+  &.active {
+    color: $color--pink;
+  }
+}
+
+nav a {
+	text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.page-menu-item {
+  font-family: 'Laila', serif;
+  font-size: 1.8rem;
+  color: $color--teal;
+}

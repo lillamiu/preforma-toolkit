@@ -3,5 +3,12 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-file": "^0.3.0",
+    "gulp-sass": "^2.3.2",
+    "run-sequence": "^1.2.2"
   }
 }
