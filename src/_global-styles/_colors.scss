@@ -1,15 +1,10 @@
-$color--background-1: $blue;
-$color--background-2: $peach;
-$color--background-3: $green;
-$color--background-4: $yellow;
-
 /*primary color*/
 $color--purple: #4E4361;
 
 /*secondary colors*/
+$color--blue: #E1EBED;
 $color--green: #E9F0EC;
 $color--peach: #FAF5F2;
-$color--blue: #E1EBED;
 $color--yellow: #FFF3DB;
 
 /*text colors*/
@@ -18,5 +13,10 @@ $color--teal: #1A95A2;
 
 
 $color--off-white: #FCFBFA;
-
 $color--white-50: rgba(255, 255, 255, 0.5);
+
+/*-----variables to use in other files-------*/
+$color--background-1: $color--blue;
+$color--background-2: $color--peach;
+$color--background-3: $color--green;
+$color--background-4: $color--yellow;
