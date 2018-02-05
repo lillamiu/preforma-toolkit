@@ -1,0 +1,23 @@
+footer {
+  background-color: $color--off-white;
+  width: 100%;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+
+  }
+
+  @media screen and (min-width: $min-phone) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $min-tablet) {
+    text-align: left;
+  }
+
+
+}

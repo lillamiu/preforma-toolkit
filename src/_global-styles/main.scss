@@ -4,7 +4,9 @@
 @import 'fonts';
 @import 'typography';
 @import 'layout';
+@import 'variables';
 
 //component styles
 @import '../components/header/header';
+@import '../components/footer/footer';
 @import '../components/content-background/content-background';
