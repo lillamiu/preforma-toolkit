@@ -3,8 +3,9 @@
   width: 100%;
   padding-top: 1.6rem;
   padding-bottom: 2.4rem;
+  min-height: 6.4rem;
 
-  nav ul {
+  nav.menu ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -16,6 +17,25 @@
 
     > li:last-child {
       padding-right: 0;
+    }
+  }
+
+  @include phone {
+    //hide menu
+    nav.menu {
+      display: none;
+    }
+  }
+
+  @include desktop {
+    //hide hamburger
+    .burger {
+      display: none;
+    }
+
+    //show menu
+    nav.menu {
+      display: block;
     }
   }
 }

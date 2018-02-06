@@ -20,3 +20,36 @@ $color--background-1: $color--blue;
 $color--background-2: $color--peach;
 $color--background-3: $color--green;
 $color--background-4: $color--yellow;
+
+
+.background-1 {
+  background-color: $color--blue;
+
+  .bg-logo {
+    fill: $color--blue;
+  }
+}
+
+.background-2 {
+  background-color: $color--peach;
+
+  .bg-logo {
+    fill: $color--peach;
+  }
+}
+
+.background-3 {
+  background-color: $color--green;
+
+  .bg-logo {
+    fill: $color--green;
+  }
+}
+
+.background-4 {
+  background-color: $color--yellow;
+
+  .bg-logo {
+    fill: $color--yellow;
+  }
+}

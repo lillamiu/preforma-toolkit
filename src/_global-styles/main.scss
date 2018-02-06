@@ -1,6 +1,7 @@
 //import all global styles and component styles
 @import 'reset';
 @import 'colors';
+@import 'mixins';
 @import 'fonts';
 @import 'typography';
 @import 'layout';
@@ -9,4 +10,5 @@
 //component styles
 @import '../components/header/header';
 @import '../components/footer/footer';
+@import '../components/mobile-menu/mobile-menu';
 @import '../components/content-background/content-background';

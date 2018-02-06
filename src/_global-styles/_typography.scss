@@ -3,6 +3,7 @@
 html {
   font-size: 62.5%; /* 1rem = 10px */
   color: $color--purple;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*--------HEADINGS--------*/
@@ -72,7 +73,7 @@ input::placeholder {
 }
 
 /*--------NAVIGATION--------*/
-.menu-item {
+.menu__item, .mobile-menu__item {
   font-family: 'League Spartan', serif;
   font-size: 1.8rem;
   color: $color--purple;

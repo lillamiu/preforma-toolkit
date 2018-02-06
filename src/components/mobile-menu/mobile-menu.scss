@@ -1,0 +1,140 @@
+@mixin easeOut {
+  transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
+}
+
+.burger {
+  position: absolute;
+  z-index: 10;
+  right: 3.2rem;
+  top: 3.2rem;
+  cursor: pointer;
+  transform: rotateY(0);
+  @include easeOut;
+
+  &__patty {
+    width: 28px;
+    height: 2px;
+    margin: 0 0 4px 0;
+    background: $color--purple;
+    @include easeOut;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // transform burger into 'x'
+  &--close {
+    transform: rotate(180deg);
+
+    .burger__patty {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(4px, 4px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -4px);
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+
+  &--active {
+    visibility: visible;
+  }
+
+  &__brand,
+  &__list {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+
+    &--active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__list {
+    height: 100vh;
+    transform: translate3d(-100%, 0, 0);
+    margin: 0;
+    padding: 0;
+    //background: mix(black, $color--blue, 10);
+    background: $color--off-white;
+    opacity: 0.9;
+    list-style-type: none;
+    @include easeOut;
+
+    &--active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__item {
+    transform: translate3d(500px, 0, 0);
+    @include easeOut;
+
+    &--active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    padding: 15px 0;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    @include easeOut;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 10px;
+      height: 2px;
+      background: $color--purple;
+      transform: translateX(-50%);
+      @include easeOut;
+    }
+
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  // add delay to each menu item
+  @for $x from 1 through 6 {
+    .mobile-menu__item:nth-child(#{$x}) {
+      transition-delay: $x * .1s;
+    }
+  }
+}
+
+// make the demo look nice, not required for your own use.
+.logo {
+  width: 90px;
+  height: 90px;
+  margin: 16px;
+  background: lighten(black, 10);
+  border-radius: 50%;
+}

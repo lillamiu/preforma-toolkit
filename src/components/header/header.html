@@ -1,25 +1,18 @@
 <header class="site-header">
-  <nav>
+  <nav class="menu">
     <ul>
+      <li><a class="menu__item active" href="/">Start</a></li>
+      <li><a class="menu__item" href="/">Terapi</a></li>
       <li>
-        <a class="menu-item active" href="/">Start</a>
-      </li>
-      <li>
-        <a class="menu-item" href="/">Terapi</a>
-      </li>
-      <li>
-        <a class="menu-item" href="/">
+        <a class="menu__item" href="/">
           <svg>
 
           </svg>
         </a>
       </li>
-      <li>
-        <a class="menu-item" href="/">Om Kim</a>
-      </li>
-      <li>
-        <a class="menu-item" href="/">Boka</a>
-      </li>
+      <li><a class="menu__item" href="/">Om Kim</a></li>
+      <li><a class="menu__item" href="/">Boka</a></li>
     </ul>
   </nav>
+  {{>@mobile-menu}}
 </header>

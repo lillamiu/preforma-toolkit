@@ -1,0 +1,67 @@
+<div class="burger">
+  <div class="burger__patty"></div>
+  <div class="burger__patty"></div>
+  <div class="burger__patty"></div>
+</div>
+
+<nav class="mobile-menu">
+  <ul class="mobile-menu__list background-1">
+    <a href=""><div class="logo"></div></a>
+    <li class="mobile-menu__item active"><a href="" class="mobile-menu__link">Start</a></li>
+    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Terapi</a></li>
+    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Om Kim</a></li>
+    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Boka</a></li>
+  </ul>
+</nav>
+<script type="text/javascript">
+(function() {
+
+  var Menu = (function() {
+    var burger = document.querySelector('.burger');
+    var menu = document.querySelector('.mobile-menu');
+    var menuList = document.querySelector('.mobile-menu__list');
+    var menuItems = document.querySelectorAll('.mobile-menu__item');
+
+    var active = false;
+
+    var toggleMenu = function() {
+
+      if (!active) { //if not open, then open/activate
+        menu.classList.add('mobile-menu--active');
+        menuList.classList.add('mobile-menu__list--active');
+        burger.classList.add('burger--close');
+        for (var i = 0; i < menuItems.length; i++) {
+          menuItems[i].classList.add('mobile-menu__item--active');
+        }
+
+        active = true;
+      } else { //close menu
+        menu.classList.remove('mobile-menu--active');
+        menuList.classList.remove('mobile-menu__list--active');
+        burger.classList.remove('burger--close');
+        for (var i = 0, ii = menuItems.length; i < ii; i++) {
+          menuItems[i].classList.remove('mobile-menu__item--active');
+        }
+
+        active = false;
+      }
+    };
+
+    var bindActions = function() {
+      burger.addEventListener('click', toggleMenu, false);
+    };
+
+    var init = function() {
+      bindActions();
+    };
+
+    return {
+      init: init
+    };
+
+  }());
+
+  Menu.init();
+
+}());
+</script>

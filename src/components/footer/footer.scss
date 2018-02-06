@@ -11,13 +11,12 @@ footer {
 
   }
 
-  @media screen and (min-width: $min-phone) {
+  @include phone { //0+
     text-align: center;
   }
 
-  @media screen and (min-width: $min-tablet) {
+  @include tablet { //480 +
     text-align: left;
   }
-
 
 }
