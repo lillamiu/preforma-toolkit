@@ -2,6 +2,21 @@
   border-left: 3.2rem solid $color--off-white;
   border-right: 3.2rem solid $color--off-white;
 
+  @include phone {
+    border-left: 1.6rem solid $color--off-white;
+    border-right: 1.6rem solid $color--off-white;
+  }
+
+  @include tablet {
+    border-left: 2.4rem solid $color--off-white;
+    border-right: 2.4rem solid $color--off-white;
+  }
+
+  @include desktop {
+    border-left: 3.2rem solid $color--off-white;
+    border-right: 3.2rem solid $color--off-white;
+  }
+
   flex: 1 0 auto;
 
   .bg-logo {
