@@ -2,11 +2,45 @@
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
 }
 
+.mobile-header {
+  position: relative;
+
+  @include phone {
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+  }
+
+  @include tablet {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Laila', serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-bottom: 1.6rem;
+
+    @include phone {
+      font-size: 2.0rem;
+    }
+
+    @include tablet {
+      font-size: 2.4rem;
+    }
+  }
+}
+
 .burger {
   position: absolute;
   z-index: 10;
-  right: 3.2rem;
-  top: 3.2rem;
+  right: 0;
+  bottom: 0;
   cursor: pointer;
   transform: rotateY(0);
   @include easeOut;
