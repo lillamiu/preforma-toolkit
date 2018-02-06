@@ -2,17 +2,24 @@
   border-left: 3.2rem solid $color--off-white;
   border-right: 3.2rem solid $color--off-white;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @include phone {
+    padding-top: 2.4rem;
     border-left: 1.6rem solid $color--off-white;
     border-right: 1.6rem solid $color--off-white;
   }
 
   @include tablet {
+    padding-top: 3.2rem;
     border-left: 2.4rem solid $color--off-white;
     border-right: 2.4rem solid $color--off-white;
   }
 
   @include desktop {
+    padding-top: 4.8rem; 
     border-left: 3.2rem solid $color--off-white;
     border-right: 3.2rem solid $color--off-white;
   }

@@ -17,17 +17,41 @@ h1 { /*Welcome header*/
 
 h2 { /*section header*/
   font-family: 'League Spartan', sans-serif;
-  font-size: 1.8rem;
-  line-height: 1.8rem;
+  font-size: 2.4rem;
+  line-height: 2.0;
   color: $color--teal;
   text-transform: uppercase;
+
+  @include phone {
+    font-size: 1.8rem;
+  }
+
+  @include tablet {
+    font-size: 2.0rem;
+  }
+
+  @include desktop {
+    font-size: 2.4rem;
+  }
 }
 
 h3 { /*section sub-header*/
   font-family: 'Laila', serif;
   font-weight: 500;
   font-size: 2.4rem;
+  line-height: 1.5;
   color: $color--purple;
+  @include phone {
+    font-size: 1.8rem;
+  }
+
+  @include tablet {
+    font-size: 2.0rem;
+  }
+
+  @include desktop {
+    font-size: 2.4rem;
+  }
 }
 
 /*--------EMPHASIS--------*/
@@ -38,10 +62,28 @@ strong {
 }
 
 /*--------BODY--------*/
+
+p {
+  line-height: 1.5;
+  padding-bottom: 1.6rem;
+}
+
 p, input {
   font-family: 'Laila', serif;
   font-weight: 300;
   font-size: 2.4rem;
+
+  @include phone {
+    font-size: 1.8rem;
+  }
+
+  @include tablet {
+    font-size: 2.0rem;
+  }
+
+  @include desktop {
+    font-size: 2.4rem;
+  }
 }
 
 a {

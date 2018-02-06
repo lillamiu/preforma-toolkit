@@ -1,0 +1,35 @@
+.article-media-block {
+  width: 100%;
+  max-width: 76.8rem;
+
+  @include phone {
+    padding: 0 1.6rem 2.4rem 1.6rem;
+  }
+
+  @include tablet {
+    padding: 0 2.4rem 3.2rem 2.4rem;
+    max-width: 51.2rem;
+  }
+
+  @include desktop {
+    padding: 0 3.2rem 4.8rem 3.2rem;
+    max-width: 76.8rem;
+  }
+
+  .media {
+    background-color: #333;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.2);
+
+    @include phone {
+      border: 0.8rem solid $color--off-white;
+    }
+
+    @include tablet {
+      border: 1.2rem solid $color--off-white;
+    }
+
+    @include desktop {
+      border: 1.6rem solid $color--off-white;
+    }
+  }
+}
