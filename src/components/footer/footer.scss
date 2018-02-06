@@ -6,17 +6,49 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  ul {
-
-  }
+  line-height: 2.0;
 
   @include phone { //0+
-    text-align: center;
+    padding: 2.4rem 1.6rem;
   }
 
   @include tablet { //480 +
-    text-align: left;
+    padding: 2.4rem;
+  }
+
+  @include desktop { //480 +
+    padding: 3.2rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    @include phone { //0+
+      text-align: center;
+    }
+
+    @include tablet { //480 +
+      text-align: center;
+    }
+
+    @include desktop { //480 +
+      text-align: center;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      > * {
+        margin-right: 2.4rem;
+      }
+      > *:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .created-by {
+    margin-top: 1.6rem;
   }
 
 }
