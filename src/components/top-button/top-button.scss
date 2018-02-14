@@ -1,0 +1,17 @@
+.back-to-top {
+  width: 72px;
+  height: 72px;
+  background-color: $color--white-50;
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px 0 $color--black-25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  //TODO make size responsive
+  //TODO should this be a FAB in mobile?
+
+  svg {
+    width: 2.4rem;
+  }
+}
