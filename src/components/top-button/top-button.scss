@@ -8,8 +8,40 @@
   align-items: center;
   justify-content: center;
 
+  position: sticky;
+  bottom: 3.2rem;
+  right: 0;
+  margin-bottom: 3.2rem;
+  align-self: flex-end;
+
+  @include phone {
+    margin-bottom: 1.6rem;
+    bottom: 1.6rem;
+  }
+
+  @include tablet {
+    margin-bottom: 2.4rem;
+    bottom: 2.4rem;
+  }
+
+  @include desktop {
+    margin-bottom: 3.2rem;
+    bottom: 3.2rem;
+  }
+
+
   //TODO make size responsive
-  //TODO should this be a FAB in mobile?
+  &:hover {
+    background-color: $color--teal;
+
+    svg use {
+      fill: $color--off-white;
+    }
+  }
+
+  &:active {
+    background-color: darken($color--teal, 10%);
+  }
 
   svg {
     width: 2.4rem;
