@@ -4,6 +4,9 @@
 
 .mobile-header {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @include phone {
     margin-left: 1.6rem;
@@ -23,7 +26,7 @@
     font-family: 'Laila', serif;
     font-weight: 500;
     font-size: 2.4rem;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     padding-bottom: 1.6rem;
 
     @include phone {
