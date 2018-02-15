@@ -16,3 +16,33 @@
   </nav>
   {{>@mobile-menu}}
 </header>
+<script type="text/javascript">
+(function() {
+  var oldScrollPosition = 0;
+  var currentScrollPosition;
+  var navbar = document.querySelector('.site-header');
+
+
+  window.addEventListener('scroll', function() {
+
+    // Calculate updated scroll position
+    currentScrollPosition = this.scrollY;
+
+    // Compare before and after scroll
+
+    // if scrolling is quick and less then -10
+    if (oldScrollPosition < currentScrollPosition) {
+      // user is scrolling down
+      navbar.classList.remove('slideDown');
+      navbar.classList.add('slideUp');
+    } else if (oldScrollPosition > currentScrollPosition) {
+      // user is scrolling up
+      navbar.classList.remove('slideUp');
+      navbar.classList.add('slideDown');
+    }
+
+    // Reset beforeScroll to afterScroll position
+    oldScrollPosition = currentScrollPosition;
+  });
+}());
+</script>

@@ -1,9 +1,11 @@
 .site-header {
   background-color: $color--off-white;
   width: 100%;
-  padding-top: 1.6rem;
-  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
+  padding-bottom: 1.6rem;
   min-height: 6.4rem;
+  position: fixed;
+  z-index: 10;
 
   nav.menu ul {
     display: flex;
@@ -21,6 +23,8 @@
   }
 
   @include phone {
+    height: 9.6rem;
+
     //hide menu
     nav.menu {
       display: none;
@@ -28,6 +32,7 @@
   }
 
   @include desktop {
+    height: 19.2rem;
     //hide hamburger
     .burger {
       display: none;
@@ -36,6 +41,61 @@
     //show menu
     nav.menu {
       display: block;
+    }
+  }
+
+  // Animation Classes
+  &.slideUp {
+    @include phone {
+      animation: slideUpPhone .5s forwards ease-out;
+    }
+    @include desktop {
+      animation: slideUpDesktop .5s forwards ease-out;
+    }
+  }
+
+  &.slideDown {
+    @include phone {
+      animation: slideDownPhone .5s forwards ease-out;
+    }
+    @include desktop {
+      animation: slideDownDesktop .5s forwards ease-out;
+    }
+  }
+
+  // Phone Animation Keyframes
+  @keyframes slideUpPhone {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-9.6rem);
+    }
+  }
+  @keyframes slideDownPhone {
+    0% {
+      transform: translateY(-9.6rem);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  // Phone Animation Keyframes
+  @keyframes slideUpDesktop {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-19.2rem);
+    }
+  }
+  @keyframes slideDownDesktop {
+    0% {
+      transform: translateY(-19.2rem);
+    }
+    100% {
+      transform: translateY(0px);
     }
   }
 }

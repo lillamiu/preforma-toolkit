@@ -7,7 +7,7 @@
   align-items: center;
 
   @include phone {
-    padding-top: 2.4rem;
+    padding-top: calc(2.4rem + 9.6rem); //9.6rem is header height
     padding-right: 1.6rem;
     padding-left: 1.6rem;
     border-left: 1.6rem solid $color--off-white;
@@ -15,7 +15,7 @@
   }
 
   @include tablet {
-    padding-top: 3.2rem;
+    padding-top: calc(3.2rem + 9.6rem); //9.6rem is header height
     padding-right: 2.4rem;
     padding-left: 2.4rem;
     border-left: 2.4rem solid $color--off-white;
@@ -23,7 +23,7 @@
   }
 
   @include desktop {
-    padding-top: 4.8rem;
+    padding-top: calc(4.8rem + 19.2rem); //19.2rem is header height 
     padding-right: 3.2rem;
     padding-left: 3.2rem;
     border-left: 3.2rem solid $color--off-white;
