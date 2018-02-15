@@ -56,10 +56,10 @@
 
   &.slideDown {
     @include phone {
-      animation: slideDownPhone .5s forwards ease-out;
+      animation: slideDownPhone .3s forwards ease-out;
     }
     @include desktop {
-      animation: slideDownDesktop .5s forwards ease-out;
+      animation: slideDownDesktop .3s forwards ease-out;
     }
   }
 
