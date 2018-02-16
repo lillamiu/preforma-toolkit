@@ -1,3 +1,6 @@
+@import '../../_global-styles/mixins';
+@import '../../_global-styles/colors';
+
 @mixin easeOut {
   transition: all .4s cubic-bezier(0.23, 1, 0.32, 1)
 }

@@ -1,3 +1,6 @@
+@import '../../_global-styles/mixins';
+@import '../../_global-styles/colors';
+
 .content-background {
   border-left: 3.2rem solid $color--off-white;
   border-right: 3.2rem solid $color--off-white;
@@ -23,7 +26,7 @@
   }
 
   @include desktop {
-    padding-top: calc(4.8rem + 19.2rem); //19.2rem is header height 
+    padding-top: calc(4.8rem + 19.2rem); //19.2rem is header height
     padding-right: 3.2rem;
     padding-left: 3.2rem;
     border-left: 3.2rem solid $color--off-white;

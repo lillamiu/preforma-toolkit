@@ -1,3 +1,6 @@
+@import '../../_global-styles/mixins';
+@import '../../_global-styles/colors';
+
 input, textarea {
   background-color: $color--off-white;
   border: 1px solid $color--black-25;

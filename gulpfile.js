@@ -39,21 +39,21 @@ var config = {
     }
 };
 
-gulp.task('styles', function(){
+/*gulp.task('styles', function(){
     gulp.src(config.src.styles.toolkit)
     .pipe(sass({
         includePaths: [config.src.styles.vendor]
     }).on('error', sass.logError))
     .pipe(gulp.dest(config.dest.styles.toolkit))
-});
+});*/
 
-/*gulp.task('styles', function(){
+gulp.task('styles', function(){
     gulp.src(config.src.styles.allStyles)
     .pipe(sass({
         includePaths: [config.src.styles.vendor]
     }).on('error', sass.logError))
     .pipe(gulp.dest(config.dest.styles.toolkit))
-}); */
+});
 
 /*
  * Start the Fractal server
