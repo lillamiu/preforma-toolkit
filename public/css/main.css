@@ -211,7 +211,9 @@ body {
   padding-bottom: 1.6rem;
   min-height: 6.4rem;
   position: fixed;
-  z-index: 10; }
+  z-index: 10;
+  top: 0;
+  left: 0; }
   .site-header nav.menu ul {
     display: flex;
     flex-direction: row;
@@ -241,10 +243,10 @@ body {
       animation: slideUpDesktop .5s forwards ease-out; } }
   @media screen and (min-width: 0px) {
     .site-header.slideDown {
-      animation: slideDownPhone .5s forwards ease-out; } }
+      animation: slideDownPhone .3s forwards ease-out; } }
   @media screen and (min-width: 840px) {
     .site-header.slideDown {
-      animation: slideDownDesktop .5s forwards ease-out; } }
+      animation: slideDownDesktop .3s forwards ease-out; } }
 
 @keyframes slideUpPhone {
   0% {
