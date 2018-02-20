@@ -1,0 +1,55 @@
+/*primary color*/
+/*secondary colors*/
+/*text colors*/
+/*-----variables to use in other files-------*/
+.background-1 {
+  background-color: #E1EBED; }
+  .background-1 .bg-logo {
+    fill: #E1EBED; }
+
+.background-2 {
+  background-color: #FAF5F2; }
+  .background-2 .bg-logo {
+    fill: #FAF5F2; }
+
+.background-3 {
+  background-color: #E9F0EC; }
+  .background-3 .bg-logo {
+    fill: #E9F0EC; }
+
+.background-4 {
+  background-color: #FFF3DB; }
+  .background-4 .bg-logo {
+    fill: #FFF3DB; }
+
+.content-background {
+  border-left: 3.2rem solid #FCFBFA;
+  border-right: 3.2rem solid #FCFBFA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0 auto; }
+  @media screen and (min-width: 0px) {
+    .content-background {
+      padding-top: 2.4rem;
+      padding-right: 1.6rem;
+      padding-left: 1.6rem;
+      border-left: 1.6rem solid #FCFBFA;
+      border-right: 1.6rem solid #FCFBFA; } }
+  @media screen and (min-width: 480px) {
+    .content-background {
+      padding-top: 3.2rem;
+      padding-right: 2.4rem;
+      padding-left: 2.4rem;
+      border-left: 2.4rem solid #FCFBFA;
+      border-right: 2.4rem solid #FCFBFA; } }
+  @media screen and (min-width: 840px) {
+    .content-background {
+      padding-top: 4.8rem;
+      padding-right: 3.2rem;
+      padding-left: 3.2rem;
+      border-left: 3.2rem solid #FCFBFA;
+      border-right: 3.2rem solid #FCFBFA; } }
+  .content-background .bg-logo {
+    opacity: 0.6;
+    mix-blend-mode: multiply; }

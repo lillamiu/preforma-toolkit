@@ -1,0 +1,58 @@
+/*primary color*/
+/*secondary colors*/
+/*text colors*/
+/*-----variables to use in other files-------*/
+.background-1 {
+  background-color: #E1EBED; }
+  .background-1 .bg-logo {
+    fill: #E1EBED; }
+
+.background-2 {
+  background-color: #FAF5F2; }
+  .background-2 .bg-logo {
+    fill: #FAF5F2; }
+
+.background-3 {
+  background-color: #E9F0EC; }
+  .background-3 .bg-logo {
+    fill: #E9F0EC; }
+
+.background-4 {
+  background-color: #FFF3DB; }
+  .background-4 .bg-logo {
+    fill: #FFF3DB; }
+
+.back-to-top {
+  width: 72px;
+  height: 72px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  bottom: 3.2rem;
+  right: 0;
+  margin-bottom: 3.2rem;
+  align-self: flex-end; }
+  @media screen and (min-width: 0px) {
+    .back-to-top {
+      margin-bottom: 1.6rem;
+      bottom: 1.6rem; } }
+  @media screen and (min-width: 480px) {
+    .back-to-top {
+      margin-bottom: 2.4rem;
+      bottom: 2.4rem; } }
+  @media screen and (min-width: 840px) {
+    .back-to-top {
+      margin-bottom: 3.2rem;
+      bottom: 3.2rem; } }
+  .back-to-top:hover {
+    background-color: #1A95A2; }
+    .back-to-top:hover svg use {
+      fill: #FCFBFA; }
+  .back-to-top:active {
+    background-color: #136d76; }
+  .back-to-top svg {
+    width: 2.4rem; }

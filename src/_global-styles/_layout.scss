@@ -1,7 +1,19 @@
+@import 'mixins';
+
 body {
   min-height: 100vh;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include phone {
+    padding-top: 9.6rem; //height of header (moving content below sticky header)
+  }
+  @include tablet {
+    padding-top: 9.6rem; //height of header (moving content below sticky header)
+  }
+  @include desktop {
+    padding-top: 19.2rem; //height of header (moving content below sticky header)
+  }
 }

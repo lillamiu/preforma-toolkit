@@ -1,0 +1,49 @@
+/*primary color*/
+/*secondary colors*/
+/*text colors*/
+/*-----variables to use in other files-------*/
+.background-1 {
+  background-color: #E1EBED; }
+  .background-1 .bg-logo {
+    fill: #E1EBED; }
+
+.background-2 {
+  background-color: #FAF5F2; }
+  .background-2 .bg-logo {
+    fill: #FAF5F2; }
+
+.background-3 {
+  background-color: #E9F0EC; }
+  .background-3 .bg-logo {
+    fill: #E9F0EC; }
+
+.background-4 {
+  background-color: #FFF3DB; }
+  .background-4 .bg-logo {
+    fill: #FFF3DB; }
+
+.article-special-block {
+  max-width: 76.8rem;
+  width: 100%; }
+  @media screen and (min-width: 0px) {
+    .article-special-block {
+      margin: 0 1.6rem 2.4rem 1.6rem; } }
+  @media screen and (min-width: 480px) {
+    .article-special-block {
+      margin: 0 2.4rem 3.2rem 2.4rem;
+      max-width: 51.2rem; } }
+  @media screen and (min-width: 840px) {
+    .article-special-block {
+      margin: 0 3.2rem 4.8rem 3.2rem;
+      max-width: 76.8rem; } }
+  .article-special-block__content {
+    background-color: rgba(255, 255, 255, 0.5); }
+    @media screen and (min-width: 0px) {
+      .article-special-block__content {
+        padding: 2.4rem 1.6rem 2.4rem 1.6rem; } }
+    @media screen and (min-width: 480px) {
+      .article-special-block__content {
+        padding: 3.2rem 2.4rem 3.2rem 2.4rem; } }
+    @media screen and (min-width: 840px) {
+      .article-special-block__content {
+        padding: 4.8rem 3.2rem 4.8rem 3.2rem; } }

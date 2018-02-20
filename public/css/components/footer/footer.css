@@ -1,0 +1,63 @@
+/*primary color*/
+/*secondary colors*/
+/*text colors*/
+/*-----variables to use in other files-------*/
+.background-1 {
+  background-color: #E1EBED; }
+  .background-1 .bg-logo {
+    fill: #E1EBED; }
+
+.background-2 {
+  background-color: #FAF5F2; }
+  .background-2 .bg-logo {
+    fill: #FAF5F2; }
+
+.background-3 {
+  background-color: #E9F0EC; }
+  .background-3 .bg-logo {
+    fill: #E9F0EC; }
+
+.background-4 {
+  background-color: #FFF3DB; }
+  .background-4 .bg-logo {
+    fill: #FFF3DB; }
+
+footer {
+  background-color: #FCFBFA;
+  width: 100%;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.0; }
+  @media screen and (min-width: 0px) {
+    footer {
+      padding: 2.4rem 1.6rem; } }
+  @media screen and (min-width: 480px) {
+    footer {
+      padding: 2.4rem; } }
+  @media screen and (min-width: 840px) {
+    footer {
+      padding: 3.2rem; } }
+  footer ul {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 0px) {
+      footer ul {
+        text-align: center; } }
+    @media screen and (min-width: 480px) {
+      footer ul {
+        text-align: center; } }
+    @media screen and (min-width: 840px) {
+      footer ul {
+        text-align: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap; }
+        footer ul > * {
+          margin-right: 2.4rem; }
+        footer ul > *:last-child {
+          margin-right: 0; } }
+  footer .created-by {
+    margin-top: 1.6rem; }

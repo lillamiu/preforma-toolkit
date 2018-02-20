@@ -1,0 +1,14 @@
+.article-text-block {
+  width: 100%;
+  max-width: 76.8rem; }
+  @media screen and (min-width: 0px) {
+    .article-text-block {
+      margin: 0 1.6rem 2.4rem 1.6rem; } }
+  @media screen and (min-width: 480px) {
+    .article-text-block {
+      margin: 0 2.4rem 3.2rem 2.4rem;
+      max-width: 51.2rem; } }
+  @media screen and (min-width: 840px) {
+    .article-text-block {
+      margin: 0 3.2rem 4.8rem 3.2rem;
+      max-width: 76.8rem; } }

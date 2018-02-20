@@ -1,0 +1,152 @@
+/*primary color*/
+/*secondary colors*/
+/*text colors*/
+/*-----variables to use in other files-------*/
+.background-1 {
+  background-color: #E1EBED; }
+  .background-1 .bg-logo {
+    fill: #E1EBED; }
+
+.background-2 {
+  background-color: #FAF5F2; }
+  .background-2 .bg-logo {
+    fill: #FAF5F2; }
+
+.background-3 {
+  background-color: #E9F0EC; }
+  .background-3 .bg-logo {
+    fill: #E9F0EC; }
+
+.background-4 {
+  background-color: #FFF3DB; }
+  .background-4 .bg-logo {
+    fill: #FFF3DB; }
+
+.mobile-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (min-width: 0px) {
+    .mobile-header {
+      margin-left: 1.6rem;
+      margin-right: 1.6rem; } }
+  @media screen and (min-width: 480px) {
+    .mobile-header {
+      margin-left: 2.4rem;
+      margin-right: 2.4rem; } }
+  @media screen and (min-width: 840px) {
+    .mobile-header {
+      display: none; } }
+  .mobile-header__title {
+    font-family: 'Laila', serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    padding-bottom: 1.6rem; }
+    @media screen and (min-width: 0px) {
+      .mobile-header__title {
+        font-size: 2.0rem; } }
+    @media screen and (min-width: 480px) {
+      .mobile-header__title {
+        font-size: 2.4rem; } }
+
+.burger {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  transform: rotateY(0);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+  .burger__patty {
+    width: 28px;
+    height: 2px;
+    margin: 0 0 4px 0;
+    background: #4E4361;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+    .burger__patty:last-child {
+      margin-bottom: 0; }
+  .burger--close {
+    transform: rotate(180deg); }
+    .burger--close .burger__patty:nth-child(1) {
+      transform: rotate(45deg) translate(4px, 4px); }
+    .burger--close .burger__patty:nth-child(2) {
+      opacity: 0; }
+    .burger--close .burger__patty:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -4px); }
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden; }
+  .mobile-menu--active {
+    visibility: visible; }
+  .mobile-menu__brand, .mobile-menu__list {
+    float: none;
+    width: 100%;
+    min-height: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; }
+    .mobile-menu__brand--active, .mobile-menu__list--active {
+      transform: translate3d(0, 0, 0); }
+  .mobile-menu__list {
+    height: 100vh;
+    transform: translate3d(-100%, 0, 0);
+    margin: 0;
+    padding: 0;
+    background: #FCFBFA;
+    opacity: 0.9;
+    list-style-type: none;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+    .mobile-menu__list--active {
+      transform: translate3d(0, 0, 0); }
+  .mobile-menu__item {
+    transform: translate3d(500px, 0, 0);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+    .mobile-menu__item--active {
+      transform: translate3d(0, 0, 0); }
+  .mobile-menu__link {
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    padding: 15px 0;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+    .mobile-menu__link:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 10px;
+      height: 2px;
+      background: #4E4361;
+      transform: translateX(-50%);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+    .mobile-menu__link:hover:before {
+      width: 100%; }
+  .mobile-menu .mobile-menu__item:nth-child(1) {
+    transition-delay: 0.1s; }
+  .mobile-menu .mobile-menu__item:nth-child(2) {
+    transition-delay: 0.2s; }
+  .mobile-menu .mobile-menu__item:nth-child(3) {
+    transition-delay: 0.3s; }
+  .mobile-menu .mobile-menu__item:nth-child(4) {
+    transition-delay: 0.4s; }
+  .mobile-menu .mobile-menu__item:nth-child(5) {
+    transition-delay: 0.5s; }
+  .mobile-menu .mobile-menu__item:nth-child(6) {
+    transition-delay: 0.6s; }
+
+.logo {
+  width: 90px;
+  height: 90px;
+  margin: 16px;
+  background: #1a1a1a;
+  border-radius: 50%; }

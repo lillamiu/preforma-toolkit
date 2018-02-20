@@ -1,0 +1,87 @@
+/*primary color*/
+/*secondary colors*/
+/*text colors*/
+/*-----variables to use in other files-------*/
+.background-1 {
+  background-color: #E1EBED; }
+  .background-1 .bg-logo {
+    fill: #E1EBED; }
+
+.background-2 {
+  background-color: #FAF5F2; }
+  .background-2 .bg-logo {
+    fill: #FAF5F2; }
+
+.background-3 {
+  background-color: #E9F0EC; }
+  .background-3 .bg-logo {
+    fill: #E9F0EC; }
+
+.background-4 {
+  background-color: #FFF3DB; }
+  .background-4 .bg-logo {
+    fill: #FFF3DB; }
+
+input, textarea {
+  background-color: #FCFBFA;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px; }
+
+input:focus, textarea:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.25); }
+
+button {
+  color: #FCFBFA;
+  background-color: #1A95A2;
+  padding: 0.8rem 3.2rem;
+  border: none;
+  border-radius: 3px; }
+
+button:focus, button:hover {
+  outline: none; }
+  button:focus::before, button:hover::before {
+    position: absolute;
+    content: "";
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #FCFBFA;
+    opacity: 0.2;
+    border-radius: 3px; }
+
+button:active {
+  background-color: #136d76; }
+
+.contact-form-block {
+  width: 100%;
+  max-width: 76.8rem; }
+  @media screen and (min-width: 0px) {
+    .contact-form-block {
+      margin: 0 1.6rem 7.2rem 1.6rem; } }
+  @media screen and (min-width: 480px) {
+    .contact-form-block {
+      margin: 0 2.4rem 9.6rem 2.4rem;
+      max-width: 51.2rem; } }
+  @media screen and (min-width: 840px) {
+    .contact-form-block {
+      margin: 0 3.2rem 9.6rem 3.2rem;
+      max-width: 76.8rem; } }
+  .contact-form-block form {
+    max-width: 51.2rem;
+    position: relative; }
+  .contact-form-block label, .contact-form-block button {
+    display: block; }
+  .contact-form-block button {
+    position: absolute;
+    right: 0; }
+  .contact-form-block label {
+    margin-bottom: 0.4rem; }
+  .contact-form-block input, .contact-form-block textarea {
+    width: 100%;
+    margin-bottom: 3.2rem; }
+  .contact-form-block textarea {
+    resize: none; }

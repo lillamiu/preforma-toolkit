@@ -1,0 +1,91 @@
+/*primary color*/
+/*secondary colors*/
+/*text colors*/
+/*-----variables to use in other files-------*/
+.background-1 {
+  background-color: #E1EBED; }
+  .background-1 .bg-logo {
+    fill: #E1EBED; }
+
+.background-2 {
+  background-color: #FAF5F2; }
+  .background-2 .bg-logo {
+    fill: #FAF5F2; }
+
+.background-3 {
+  background-color: #E9F0EC; }
+  .background-3 .bg-logo {
+    fill: #E9F0EC; }
+
+.background-4 {
+  background-color: #FFF3DB; }
+  .background-4 .bg-logo {
+    fill: #FFF3DB; }
+
+.site-header {
+  background-color: #FCFBFA;
+  width: 100%;
+  padding-top: 2.4rem;
+  padding-bottom: 1.6rem;
+  min-height: 6.4rem;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0; }
+  .site-header nav.menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .site-header nav.menu ul > li {
+      padding-right: 4.8rem; }
+    .site-header nav.menu ul > li:last-child {
+      padding-right: 0; }
+  @media screen and (min-width: 0px) {
+    .site-header {
+      height: 9.6rem; }
+      .site-header nav.menu {
+        display: none; } }
+  @media screen and (min-width: 840px) {
+    .site-header {
+      height: 19.2rem; }
+      .site-header .burger {
+        display: none; }
+      .site-header nav.menu {
+        display: block; } }
+  @media screen and (min-width: 0px) {
+    .site-header.slideUp {
+      animation: slideUpPhone .5s forwards ease-out; } }
+  @media screen and (min-width: 840px) {
+    .site-header.slideUp {
+      animation: slideUpDesktop .5s forwards ease-out; } }
+  @media screen and (min-width: 0px) {
+    .site-header.slideDown {
+      animation: slideDownPhone .3s forwards ease-out; } }
+  @media screen and (min-width: 840px) {
+    .site-header.slideDown {
+      animation: slideDownDesktop .3s forwards ease-out; } }
+
+@keyframes slideUpPhone {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-9.6rem); } }
+
+@keyframes slideDownPhone {
+  0% {
+    transform: translateY(-9.6rem); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes slideUpDesktop {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-19.2rem); } }
+
+@keyframes slideDownDesktop {
+  0% {
+    transform: translateY(-19.2rem); }
+  100% {
+    transform: translateY(0px); } }
