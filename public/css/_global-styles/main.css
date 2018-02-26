@@ -79,8 +79,8 @@ html {
 
 @font-face {
   font-family: 'League Spartan';
-  src: url("../fonts/league-spartan/leaguespartan-bold.eot");
-  src: url("../fonts/league-spartan/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/league-spartan/leaguespartan-bold.woff2") format("woff2"), url("../fonts/league-spartan/leaguespartan-bold.woff") format("woff"), url("../fonts/league-spartan/leaguespartan-bold.ttf") format("truetype"), url("../fonts/league-spartan/leaguespartan-bold.svg#league_spartanbold") format("svg");
+  src: url("../../fonts/league-spartan/leaguespartan-bold.eot");
+  src: url("../../fonts/league-spartan/leaguespartan-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/league-spartan/leaguespartan-bold.woff2") format("woff2"), url("../../fonts/league-spartan/leaguespartan-bold.woff") format("woff"), url("../../fonts/league-spartan/leaguespartan-bold.ttf") format("truetype"), url("../../fonts/league-spartan/leaguespartan-bold.svg#league_spartanbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
@@ -133,6 +133,22 @@ h3 {
     h3 {
       font-size: 2.4rem; } }
 
+h4 {
+  /*section sub heading label*/
+  font-family: 'Laila', serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #4E4361; }
+  @media screen and (min-width: 0px) {
+    h4 {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 480px) {
+    h4 {
+      font-size: 1.6rem; } }
+  @media screen and (min-width: 840px) {
+    h4 {
+      font-size: 1.8rem; } }
+
 /*--------EMPHASIS--------*/
 strong {
   font-family: 'Laila', serif;
@@ -162,6 +178,9 @@ a {
   font-weight: 500;
   color: #4E4361;
   font-size: inherit; }
+  a:focus {
+    outline: 2px solid #1A95A2;
+    outline-offset: 2px; }
 
 /*--------FOOTER--------*/
 footer {
@@ -174,6 +193,15 @@ label {
   font-family: 'Laila', serif;
   font-weight: 500;
   font-size: 1.8rem; }
+  @media screen and (min-width: 0px) {
+    label {
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 480px) {
+    label {
+      font-size: 1.6rem; } }
+  @media screen and (min-width: 840px) {
+    label {
+      font-size: 1.8rem; } }
 
 input::placeholder {
   color: inherit;
@@ -192,11 +220,6 @@ nav a {
   text-decoration: none; }
   nav a:visited {
     color: inherit; }
-
-.table-of-contents__item {
-  font-family: 'Laila', serif;
-  font-size: 1.8rem;
-  color: #1A95A2; }
 
 body {
   min-height: 100vh;

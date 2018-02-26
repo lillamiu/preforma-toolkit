@@ -6,7 +6,7 @@
       <li>
         <a class="menu__item" href="/">
           <svg>
-
+            <!-- TODO accessibility -->
           </svg>
         </a>
       </li>
@@ -16,7 +16,7 @@
   </nav>
   {{>@mobile-menu}}
 </header>
-<script type="text/javascript">
+<script>
 (function(document, window, index) {
   //TODO disable scroll when mobile menu is open!
 
@@ -53,7 +53,7 @@
       element.style.top = ( elTop > 0 ? 0 : elTop ) + 'px';
     } else if( wScrollDiff < 0 ) { // scrolled down
       if( (wScrollCurrent + wHeight) >= (dHeight - elHeight) ) { // scrolled to the very bottom; element slides in
-        element.style.top = ( ( elTop = wScrollCurrent + wHeight - dHeight ) < 0 ? elTop : 0 ) + 'px';
+        //element.style.top = ( ( elTop = wScrollCurrent + wHeight - dHeight ) < 0 ? elTop : 0 ) + 'px';
       } else { // scrolled down; element slides out
         element.style.top = ( Math.abs( elTop ) > elHeight ? -elHeight : elTop ) + 'px';
       }
