@@ -43,13 +43,32 @@
 }
 
 .burger {
+  background-color: transparent;
+  border: none;
+  padding: 13px 6px 13px 6px;
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   right: 0;
   bottom: 0;
   cursor: pointer;
   transform: rotateY(0);
   @include easeOut;
+
+  &:focus {
+    // outline: 2px solid $color--teal;
+    // outline-offset: 2px;
+    outline: none;
+    box-shadow: 0 0 0 2px $color--teal;
+    border-radius: 28px;
+
+    .burger__patty {
+      //background: $color--pink;
+    }
+  }
+
+  &:active {
+    background-color: inherit;
+  }
 
   &__patty {
     width: 28px;
@@ -84,8 +103,10 @@
 .mobile-menu {
   position: fixed;
   top: 0;
+  bottom: 0;
   width: 100%;
   visibility: hidden;
+  overflow-y: scroll;
 
   &--active {
     visibility: visible;

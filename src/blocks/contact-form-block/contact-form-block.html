@@ -3,17 +3,19 @@
     <h2>Skicka Meddelande</h2>
   </header>
 
+  <p>Obligatoriska fält markerade med <strong>*</strong></p>
+
   <form id="contact-form" action="index.html" method="post">
-    <label for="name">Namn</label>
+    <label for="name">Namn *</label>
     <input id="name" type="text" name="name" value="" required placeholder="Hej Kim, jag heter ...">
 
-    <label for="email">E-mail</label>
+    <label for="email">E-mail *</label>
     <input id="email" type="email" name="email" value="" required placeholder="du kan nå mig på följande adress ...">
 
     <label for="phone">Telefon</label>
     <input id="phone" type="tel" name="phone" value="" placeholder="eller per telefon på ... ">
 
-    <label for="message">Meddelande</label>
+    <label for="message">Meddelande *</label>
     <textarea id="message" name="message" required form="contact-form" rows="8" cols="80"></textarea>
 
     <button type="submit" name="button">Skicka</button>

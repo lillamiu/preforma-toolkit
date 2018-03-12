@@ -2,18 +2,38 @@
 
 body {
   min-height: 100vh;
-
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  @include phone {
-    padding-top: 9.6rem; //height of header (moving content below sticky header)
-  }
-  @include tablet {
-    padding-top: 9.6rem; //height of header (moving content below sticky header)
-  }
-  @include desktop {
-    padding-top: 19.2rem; //height of header (moving content below sticky header)
+  & , #top {
+
+    @include phone {
+      padding-top: 9.6rem; //height of header (moving content below sticky header)
+    }
+    @include tablet {
+      padding-top: 9.6rem; //height of header (moving content below sticky header)
+    }
+    @include desktop {
+      padding-top: 19.2rem; //height of header (moving content below sticky header)
+    }
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+#top {
+  position: absolute;
+  top: 0
+}
+
+// making section headers sticky. needs more work
+// section > header {
+//   position: sticky;
+//   top: 0;
+//   z-index: 7;
+//   background-color: $color--off-white;
+//   width: 100vw;
+// }

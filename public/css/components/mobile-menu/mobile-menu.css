@@ -51,13 +51,22 @@
         font-size: 2.4rem; } }
 
 .burger {
+  background-color: transparent;
+  border: none;
+  padding: 13px 6px 13px 6px;
   position: absolute;
-  z-index: 10;
+  z-index: 20;
   right: 0;
   bottom: 0;
   cursor: pointer;
   transform: rotateY(0);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+  .burger:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #1A95A2;
+    border-radius: 28px; }
+  .burger:active {
+    background-color: inherit; }
   .burger__patty {
     width: 28px;
     height: 2px;
@@ -78,8 +87,10 @@
 .mobile-menu {
   position: fixed;
   top: 0;
+  bottom: 0;
   width: 100%;
-  visibility: hidden; }
+  visibility: hidden;
+  overflow-y: scroll; }
   .mobile-menu--active {
     visibility: visible; }
   .mobile-menu__brand, .mobile-menu__list {

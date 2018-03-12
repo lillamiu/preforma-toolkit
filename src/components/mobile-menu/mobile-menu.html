@@ -3,36 +3,76 @@
   <div class="mobile-header__title">Preforma Samtalsterapi</div>
   <div class="menu__item active">Active Page</div>
 
-  <div class="burger">
+  <button class="burger" aria-haspopup="true" aria-controls="mobileMenu">
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
     <div class="burger__patty"></div>
-  </div>
+  </button>
 </div>
 
-<nav class="mobile-menu">
-  <ul class="mobile-menu__list background-1">
-    <li><a href=""><div class="logo"></div></a></li>
-    <li class="mobile-menu__item active"><a href="" class="mobile-menu__link">Start</a></li>
-    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Terapi</a></li>
-    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Om Kim</a></li>
-    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Boka</a></li>
+<nav id="mobileMenu" class="mobile-menu" role="navigation">
+  <ul role="menu" class="mobile-menu__list background-1">
+    <li>
+      <a href="">
+        <div class="logo"></div>
+      </a>
+    </li>
+    <li class="mobile-menu__item active">
+      <a role="menuitem" href="" class="mobile-menu__link">Start</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a role="menuitem" href="" class="mobile-menu__link">Terapi</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a role="menuitem" href="" class="mobile-menu__link">Om Kim</a>
+    </li>
+    <li class="mobile-menu__item">
+      <a role="menuitem" href="" class="mobile-menu__link">Boka</a>
+    </li>
   </ul>
 </nav>
 <script>
 (function() {
 
   var Menu = (function() {
+
     var burger = document.querySelector('.burger');
     var menu = document.querySelector('.mobile-menu');
     var menuList = document.querySelector('.mobile-menu__list');
     var menuItems = document.querySelectorAll('.mobile-menu__item');
+    var body = document.body;
+
+    var createFocusCycle = function() {
+      var burger = document.querySelector('.burger');
+      var menuItems = document.querySelectorAll('.mobile-menu__item');
+      var first = burger;
+      var last = menuItems[menuItems.length - 1];
+      var nextToLast = menuItems[menuItems.length - 2];
+
+      last.addEventListener('keydown', function(e){
+        if (e.keyCode===9) {
+          if (e.shiftKey) {
+            nextToLast.children[0].focus(); //focus the link, not the list item
+            e.preventDefault();
+            return;
+          }
+
+          first.focus();
+          e.preventDefault();
+        }
+      });
+    }
 
     var active = false;
 
     var toggleMenu = function() {
+      var mainContent = document.querySelector('.content-background'); //TODO this element doesnt exist when this code is run
 
       if (!active) { //if not open, then open/activate
+        body.classList.add('no-scroll');
+        burger.setAttribute("aria-expanded", "true");
+        mainContent.setAttribute("aria-disabled", "true");
+        mainContent.setAttribute("aria-hidden", "true");
         menu.classList.add('mobile-menu--active');
         menuList.classList.add('mobile-menu__list--active');
         burger.classList.add('burger--close');
@@ -42,6 +82,10 @@
 
         active = true;
       } else { //close menu
+        burger.setAttribute("aria-expanded", "false");
+        mainContent.setAttribute("aria-disabled", "false");
+        mainContent.setAttribute("aria-hidden", "false");
+        body.classList.remove('no-scroll');
         menu.classList.remove('mobile-menu--active');
         menuList.classList.remove('mobile-menu__list--active');
         burger.classList.remove('burger--close');
@@ -59,6 +103,7 @@
 
     var init = function() {
       bindActions();
+      createFocusCycle();
     };
 
     return {
