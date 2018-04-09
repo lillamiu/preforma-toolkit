@@ -2,10 +2,10 @@
 $color--purple: #4E4361;
 
 /*secondary colors*/
-$color--blue: #E1EBED;
+$color--blue: #E4EEF0;
 $color--green: #E9F0EC;
-$color--peach: #FAF5F2;
-$color--yellow: #FFF3DB;
+$color--peach: #F5EDE9;
+$color--yellow: #FAF2E3;
 
 /*text colors*/
 $color--pink: #F24677;
@@ -27,7 +27,8 @@ $color--background-4: $color--yellow;
   background-color: $color--blue;
 
   .bg-logo {
-    fill: $color--blue;
+    //fill: $color--blue;
+    background-color: $color--blue;
   }
 }
 
@@ -35,7 +36,8 @@ $color--background-4: $color--yellow;
   background-color: $color--peach;
 
   .bg-logo {
-    fill: $color--peach;
+    //fill: $color--peach;
+    background-color: $color--peach;
   }
 }
 
@@ -43,7 +45,8 @@ $color--background-4: $color--yellow;
   background-color: $color--green;
 
   .bg-logo {
-    fill: $color--green;
+    //fill: $color--green;
+    background-color: $color--green;
   }
 }
 
@@ -51,6 +54,7 @@ $color--background-4: $color--yellow;
   background-color: $color--yellow;
 
   .bg-logo {
-    fill: $color--yellow;
+    //fill: $color--yellow;
+    background-color: $color--yellow;
   }
 }

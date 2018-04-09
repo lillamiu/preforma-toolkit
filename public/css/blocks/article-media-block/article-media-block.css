@@ -3,28 +3,30 @@
 /*text colors*/
 /*-----variables to use in other files-------*/
 .background-1 {
-  background-color: #E1EBED; }
+  background-color: #E4EEF0; }
   .background-1 .bg-logo {
-    fill: #E1EBED; }
+    background-color: #E4EEF0; }
 
 .background-2 {
-  background-color: #FAF5F2; }
+  background-color: #F5EDE9; }
   .background-2 .bg-logo {
-    fill: #FAF5F2; }
+    background-color: #F5EDE9; }
 
 .background-3 {
   background-color: #E9F0EC; }
   .background-3 .bg-logo {
-    fill: #E9F0EC; }
+    background-color: #E9F0EC; }
 
 .background-4 {
-  background-color: #FFF3DB; }
+  background-color: #FAF2E3; }
   .background-4 .bg-logo {
-    fill: #FFF3DB; }
+    background-color: #FAF2E3; }
 
 .article-media-block {
   width: 100%;
-  max-width: 76.8rem; }
+  max-width: 76.8rem;
+  display: flex;
+  justify-content: center; }
   @media screen and (min-width: 0px) {
     .article-media-block {
       margin: 0 1.6rem 2.4rem 1.6rem; } }
@@ -36,29 +38,45 @@
     .article-media-block {
       margin: 0 3.2rem 4.8rem 3.2rem;
       max-width: 76.8rem; } }
-  .article-media-block .media-container {
+  .article-media-block .media-border {
     background-color: #333;
     box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.2); }
     @media screen and (min-width: 0px) {
-      .article-media-block .media-container {
+      .article-media-block .media-border {
         border: 0.8rem solid #FCFBFA; } }
     @media screen and (min-width: 480px) {
-      .article-media-block .media-container {
+      .article-media-block .media-border {
         border: 1.2rem solid #FCFBFA; } }
     @media screen and (min-width: 840px) {
-      .article-media-block .media-container {
+      .article-media-block .media-border {
         border: 1.6rem solid #FCFBFA; } }
-    .article-media-block .media-container .video-wrapper {
-      position: relative;
-      padding-bottom: 56.25%;
-      /* 16:9 */
-      padding-top: 25px;
-      height: 0; }
-    .article-media-block .media-container .video-wrapper object,
-    .article-media-block .media-container .video-wrapper embed,
-    .article-media-block .media-container .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
+  .article-media-block .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    width: 100%; }
+  .article-media-block .video-wrapper object,
+  .article-media-block .video-wrapper embed,
+  .article-media-block .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .article-media-block .profile-image {
+    width: 32rem;
+    height: 32rem; }
+    @media screen and (min-width: 0px) {
+      .article-media-block .profile-image {
+        width: 20rem;
+        height: 20rem; } }
+    @media screen and (min-width: 480px) {
+      .article-media-block .profile-image {
+        width: 26rem;
+        height: 26rem; } }
+    @media screen and (min-width: 840px) {
+      .article-media-block .profile-image {
+        width: 32rem;
+        height: 32rem; } }

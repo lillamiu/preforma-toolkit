@@ -1,0 +1,30 @@
+@import '../../_global-styles/mixins';
+
+.bg-logo {
+  position: fixed;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  mask-image: url(/vectors/lady-release.svg);
+  -webkit-mask-image: url(/vectors/lady-release.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  height: 100%;
+
+  @include phone {
+    right: 1.6rem;
+    left: 1.6rem;
+    height: 35rem;
+  }
+
+  @include tablet {
+    right: 2.4rem;
+    left: 2.4rem;
+    height: 100%;
+  }
+
+  @include desktop {
+    right: 3.2rem;
+    left: 3.2rem;
+    height: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.bg-logo {
+  position: fixed;
+  mix-blend-mode: multiply;
+  opacity: 0.6;
+  mask-image: url(/vectors/lady-release.svg);
+  -webkit-mask-image: url(/vectors/lady-release.svg);
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  height: 100%; }
+  @media screen and (min-width: 0px) {
+    .bg-logo {
+      right: 1.6rem;
+      left: 1.6rem;
+      height: 35rem; } }
+  @media screen and (min-width: 480px) {
+    .bg-logo {
+      right: 2.4rem;
+      left: 2.4rem;
+      height: 100%; } }
+  @media screen and (min-width: 840px) {
+    .bg-logo {
+      right: 3.2rem;
+      left: 3.2rem;
+      height: 100%; } }

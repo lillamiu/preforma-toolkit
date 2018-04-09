@@ -3,24 +3,24 @@
 /*text colors*/
 /*-----variables to use in other files-------*/
 .background-1 {
-  background-color: #E1EBED; }
+  background-color: #E4EEF0; }
   .background-1 .bg-logo {
-    fill: #E1EBED; }
+    background-color: #E4EEF0; }
 
 .background-2 {
-  background-color: #FAF5F2; }
+  background-color: #F5EDE9; }
   .background-2 .bg-logo {
-    fill: #FAF5F2; }
+    background-color: #F5EDE9; }
 
 .background-3 {
   background-color: #E9F0EC; }
   .background-3 .bg-logo {
-    fill: #E9F0EC; }
+    background-color: #E9F0EC; }
 
 .background-4 {
-  background-color: #FFF3DB; }
+  background-color: #FAF2E3; }
   .background-4 .bg-logo {
-    fill: #FFF3DB; }
+    background-color: #FAF2E3; }
 
 .content-background {
   border-left: 3.2rem solid #FCFBFA;
@@ -50,6 +50,3 @@
       padding-left: 3.2rem;
       border-left: 3.2rem solid #FCFBFA;
       border-right: 3.2rem solid #FCFBFA; } }
-  .content-background .bg-logo {
-    opacity: 0.6;
-    mix-blend-mode: multiply; }
